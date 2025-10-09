@@ -5,15 +5,25 @@
   <title>Sticky Footer</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  .row {
+  display: flex;
+  flex-direction: column; /* arah vertikal */
+  gap: 10px; /* jarak antar elemen */
+  align-items: flex-start; /* sejajarkan ke kiri */
+}
+
+form, p {
+  margin: 0;
+}
+
+</style>
 <body>
-  <div class="wrapper">
-    <main>
-      <h1>Konten Utama</h1>
-      <p>Ini konten halaman. Bisa pendek atau panjang.</p>
-    </main>
-    <footer>
-      &copy; 2025 Satriya Rental App
-    </footer>
-  </div>
+  <div class="row">
+  <form>
+    <input type="text" placeholder="Nama">
+  </form>
+  <p>Deskripsi atau info tambahan</p>
+</div>
 </body>
 </html>
